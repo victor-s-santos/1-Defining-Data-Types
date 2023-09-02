@@ -79,7 +79,6 @@ UPDATE public.fast_food_nutrition_menu SET protein_two = CASE
 ALTER TABLE public.fast_food_nutrition_menu DROP COLUMN "Protein(g)";
 ALTER TABLE public.fast_food_nutrition_menu RENAME COLUMN protein_two TO "Protein(g)";
 
-
 --WeightWatchersPnts
 ALTER TABLE public.fast_food_nutrition_menu ADD COLUMN weight_two FLOAT;
 UPDATE public.fast_food_nutrition_menu SET weight_two = CASE 
